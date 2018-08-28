@@ -5,7 +5,7 @@ body{
 a{
     color:inherit;
 }
-.clesrfix::after{
+.clearfix::after{
     content: '';
     display: block;
     clear: both;
