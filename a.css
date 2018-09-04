@@ -5,6 +5,10 @@ body{
 a{
     color:inherit;
 }
+*{
+    margin:0;
+    padding: 0;
+}
 .clearfix::after{
     content: '';
     display: block;
@@ -67,21 +71,21 @@ a{
 }
 .banner .mask{
     height: 515px;
-    background-color:rgb(0,0,0,0.7);
+    background-color:rgb(0,0,0,0.6);
 }
 .userCard{
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
     max-width: 940px;
     background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
 }
 .userCard .welcome{
     /* height: 30px; */
     padding: 5px 15px;
     line-height: 21px;
     display: inline-block;
-    background-color: #e6686a;
+    background-color: #E83B35;
     color:white;
     position: relative;
 }
@@ -89,18 +93,73 @@ a{
    display: block;
    border:10px solid transparent;
    width:0px;
-   border-left-color:#E6686A;
+   border-left-color:#E83B35;
    border-top-width:0px;
    position: absolute;
    left:4px;
    top:100%;
 }
-.pictureAndtext .picture{
+.userCard .picture{
     float: left;
-    margin-left: 40px;
-    margin-top: 40px;
 }
-.pictureAndtext .text{
+.userCard .text{
     float: left;
-    margin-left: 20px;
+    margin-left: 65px;
+    width: 450px;
 }
+.userCard .text h1{
+    margin-top: 18px;
+}
+.userCard .text hr{
+    margin:20px 0;
+}
+.userCard .pictureAndtext{
+    padding:50px;  
+}
+.userCard dl dt,
+.userCard dl dd{
+    float: left;
+    padding:5px 0;
+}
+.userCard dl dt{
+    width:30%;
+    font-weight: bold;
+}
+.userCard dl dd{
+    width:70%;
+    color: #9DA0A7;
+}
+.userCard  footer{
+    background:#E83B35;
+    padding: 16px 0;
+}
+body> main{
+    margin-top: -380px;
+}
+body> main .downloadResume-wrapper{
+    text-align: center;
+}
+body> main .downloadResume{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    display: inline-block;
+    border:1px solid #CDCFD0;
+    background:#EFEFEF;
+    color:#3d4451;
+    border-radius: 2px;
+    font-weight: bold;
+    margin:30px 0;
+    transition:box-shadow 0.3s;
+}
+body > main .downloadResume:hover{
+    box-shadow: 0px 6px 9px 1px  rgba(0,0,0,0.2);
+}
+.selfIntroduction{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    text-align: center;
+}
+
+
